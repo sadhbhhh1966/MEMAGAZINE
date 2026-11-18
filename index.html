@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEMAGAZINE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="arrows">
+      <button id="backBtn" aria-label="Back">&larr;</button>
+      <button id="forwardBtn" aria-label="Forward">&rarr;</button>
+    </div>
+    <h1 class="logo">MEMAGAZINE</h1>
+    <input id="search" type="search" placeholder="Search..." aria-label="Search">
+  </header>
+
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#intro">Intro</a>
+    <a href="#collection">Collection</a>
+    <a href="#travel">Travel</a>
+    <a href="#tattoos">Tattoos</a>
+    <a href="#design">Design</a>
+    <a href="#artist">Artist</a>
+    <a href="#materials">Materials</a>
+  </nav>
+
+  <main>
+
+    <section class="page" data-page="home" data-bg="images/bg-home.jpg">
+      <div class="banner">
+        <img src="images/banner.jpg" alt="Banner" onerror="this.style.display='none'">
+        <span class="placeholder-label">banner photo: zebra print, chair in room</span>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="strip">
+            <img src="images/photobooth1-a.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth1-b.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth1-c.jpg" alt="" onerror="this.remove()">
+          </div>
+        </div>
+        <div class="column">
+          <div class="strip">
+            <img src="images/photobooth2-a.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth2-b.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth2-c.jpg" alt="" onerror="this.remove()">
+          </div>
+        </div>
+        <div class="column">
+          <div class="strip">
+            <img src="images/photobooth3-a.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth3-b.jpg" alt="" onerror="this.remove()">
+            <img src="images/photobooth3-c.jpg" alt="" onerror="this.remove()">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" data-page="intro" data-bg="images/bg-intro.jpg">
+      <h2>Intro</h2>
+      <div class="reveal-group">
+        <div class="hotspot" data-text="Write about yourself here. Click again to close.">Who I am</div>
+        <div class="hotspot" data-text="Write about what MEMAGAZINE is here.">What this is</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="collection" data-bg="images/bg-collection.jpg">
+      <h2>Collection</h2>
+      <p class="hint">Click an item to read about it.</p>
+      <div class="grid">
+        <div class="hotspot" data-text="Description of item 1.">Item 1</div>
+        <div class="hotspot" data-text="Description of item 2.">Item 2</div>
+        <div class="hotspot" data-text="Description of item 3.">Item 3</div>
+        <div class="hotspot" data-text="Description of item 4.">Item 4</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="travel" data-bg="images/bg-travel.jpg">
+      <h2>Travel</h2>
+      <p class="hint">Click a photo to read about it.</p>
+      <div class="grid">
+        <div class="hotspot" data-text="Where this was taken and what happened.">Place 1</div>
+        <div class="hotspot" data-text="Where this was taken and what happened.">Place 2</div>
+        <div class="hotspot" data-text="Where this was taken and what happened.">Place 3</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="tattoos" data-bg="images/bg-tattoos.jpg">
+      <h2>Tattoos</h2>
+      <p class="hint">Click a tattoo to read about it.</p>
+      <div class="grid">
+        <div class="hotspot" data-text="The story behind this tattoo.">Tattoo 1</div>
+        <div class="hotspot" data-text="The story behind this tattoo.">Tattoo 2</div>
+        <div class="hotspot" data-text="The story behind this tattoo.">Tattoo 3</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="design" data-bg="images/bg-design.jpg">
+      <h2>Design</h2>
+      <p class="hint">Click a designer, then see how they inspired my work.</p>
+      <div class="grid">
+        <div class="hotspot" data-text="Designer 1: what I admire and how they inspired my work.">Designer 1</div>
+        <div class="hotspot" data-text="Designer 2: what I admire and how they inspired my work.">Designer 2</div>
+        <div class="hotspot" data-text="Designer 3: what I admire and how they inspired my work.">Designer 3</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="artist" data-bg="images/bg-artist.jpg">
+      <h2>Artist</h2>
+      <p class="hint">Click an artist to read about them.</p>
+      <div class="grid">
+        <div class="hotspot" data-text="Artist 1: notes.">Artist 1</div>
+        <div class="hotspot" data-text="Artist 2: notes.">Artist 2</div>
+        <div class="hotspot" data-text="Artist 3: notes.">Artist 3</div>
+      </div>
+    </section>
+
+    <section class="page" data-page="materials" data-bg="images/bg-materials.jpg">
+      <h2>Materials</h2>
+      <p class="hint">Click a square for its description (bottom right).</p>
+      <div class="grid3">
+        <div class="hotspot corner" data-text="Material 1 description.">1</div>
+        <div class="hotspot corner" data-text="Material 2 description.">2</div>
+        <div class="hotspot corner" data-text="Material 3 description.">3</div>
+        <div class="hotspot corner" data-text="Material 4 description.">4</div>
+        <div class="hotspot corner" data-text="Material 5 description.">5</div>
+        <div class="hotspot corner" data-text="Material 6 description.">6</div>
+        <div class="hotspot corner" data-text="Material 7 description.">7</div>
+        <div class="hotspot corner" data-text="Material 8 description.">8</div>
+        <div class="hotspot corner" data-text="Material 9 description.">9</div>
+      </div>
+      <div id="cornerBox" class="corner-box" hidden></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
